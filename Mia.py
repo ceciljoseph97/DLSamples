@@ -29,13 +29,8 @@ voices = engine.getProperty('voices')
 engine.setProperty('voice', voices[1].id) #Fem_Voice
 rate = engine.getProperty('rate')   # getting details of current speaking rate
 engine.setProperty('rate', 180)     # setting up new voice rate
-flag=0
 while(True):
     message = input("> ")
-    if("music" in message):
-        flag=1
-    else:
-        flag=0
     if message in exit_conditions:
         break
     else:
@@ -43,12 +38,3 @@ while(True):
         print(f"🤖 {fulfillment_text}")
         engine.say(fulfillment_text)
         engine.runAndWait()
-        if(flag==1 and "Adele" in fulfillment_text):
-            try:
-                mixer.init()
-                mixer.music.load('AdeleHello.mp3')
-                mixer.music.play()
-                audio = MP3("AdeleHello.mp3")
-                time.sleep(audio.info.length)
-            except KeyboardInterrupt:
-                mixer.music.stop()
