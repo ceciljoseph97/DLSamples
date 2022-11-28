@@ -2,9 +2,6 @@ import google.cloud.dialogflow_v2 as dF
 import os
 from gtts import gTTS
 import pyttsx3
-from pygame import mixer
-from mutagen.mp3 import MP3
-import time
 
 language = 'en'
 os.environ["GOOGLE_APPLICATION_CREDENTIALS"]="ServiceKeyJsonFromDF"
