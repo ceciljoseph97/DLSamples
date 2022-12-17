@@ -4,8 +4,8 @@ from gtts import gTTS
 import pyttsx3
 
 language = 'en'
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"]="ServiceKeyJsonFromDF"
-os.environ["DIALOGFLOW_PROJECT_ID"]="Project_ID"
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"]="ServiceKeyJsonFromDF"# Dialogflow Component
+os.environ["DIALOGFLOW_PROJECT_ID"]="Project_ID"# Dialogflow Component
 
 project_id = os.getenv("DIALOGFLOW_PROJECT_ID")
 session_id="any_random_unique_string"
