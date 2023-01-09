@@ -5,6 +5,6 @@ Includes:<br>
 2:Pulse2Percept Familiarization<br>
 3:CNN ANN Compare.<br>
 4:pulse2percept<br>
-5:Pandas Learning
+5:Pandas Learning<br>
 6:YOLOV5 Custom Detection
 
