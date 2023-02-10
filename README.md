@@ -7,5 +7,4 @@ Includes:<br>
 4:pulse2percept<br>
 5:Pandas Learning<br>
 6:YOLOV5 Custom Detection<br>
-7:Image Classification with Caltech Histogram data
 
